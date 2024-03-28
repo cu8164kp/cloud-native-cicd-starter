@@ -4,12 +4,12 @@
 docker:
   # server: docker-registry.131.153.227.137.sslip.io
   server: docker.io
-  prefix: krumware/
+  prefix: setuplinux/
   secretName: docker-push-user
 
 github:
   # github repository owner
-  owner: krumIO
+  owner: cu8164kp
   # the list of repositories to build on push events
   repositories:
     python-docs-hello-world:
@@ -39,8 +39,8 @@ github:
 
   # configures our expected inbound webhook route which Github will be 
   webhook:
-    domain: rancher.74.220.17.50.sslip.io
-    hostname: https://rancher.74.220.17.50.sslip.io
+    domain: rancher.12.2.240.100.sslip.io
+    hostname: https://rancher.12.2.240.100.sslip.io
     port: 12000
     endpoint: /api/webhook
 
